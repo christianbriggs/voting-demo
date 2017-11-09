@@ -3,7 +3,7 @@ redis:
   tags:
     - Prod
 results:
-  image: 'pkennedyr/results:master'
+  image: 'briggzay/results:master'
   autoredeploy: true
   links:
     - redis
@@ -13,7 +13,7 @@ results:
   tags:
     - Prod
 voting:
-  image: 'pkennedyr/voting:master'
+  image: 'briggzay/voting:master'
   autoredeploy: true
   links:
     - redis
