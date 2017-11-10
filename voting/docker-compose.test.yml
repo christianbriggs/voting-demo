@@ -1,6 +1,6 @@
 sut:
   build:
-    context: .
+    context: ./
     dockerfile: Dockerfile
   image: this
   links:
