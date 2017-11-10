@@ -1,7 +1,7 @@
 sut:
   build:
-    context: ./
-    dockerfile: Dockerfile
+    context: .
+    dockerfile: Dockerfile-alternate
   image: this
   links:
     - redis
