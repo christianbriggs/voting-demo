@@ -1,6 +1,6 @@
 import unittest
 
-from voting.app import app
+import app
 
 
 class FlaskrTestCase(unittest.TestCase):
