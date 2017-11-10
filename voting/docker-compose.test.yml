@@ -1,4 +1,7 @@
 sut:
+  build:
+    context: .
+    dockerfile: Dockerfile
   image: this
   links:
     - redis
