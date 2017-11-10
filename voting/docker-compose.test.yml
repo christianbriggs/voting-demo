@@ -6,6 +6,5 @@ sut:
   links:
     - redis
   command: ./run_test.sh
-#  command: echo "Tests pass!"
 redis:
   image: redis
