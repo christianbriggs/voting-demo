@@ -2,4 +2,4 @@
 
 
 echo "Running Flask Unit Tests"
-python unh698_test.py
+python test.py
