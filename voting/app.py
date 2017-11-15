@@ -56,6 +56,10 @@ def hello():
         return render_template('index.html', name=os.getenv('NAME', name), hostname=socket.gethostname(), optionA=optionA, optionB=optionB)
 
 
+@app.route("/pulse", methods=['GET'])
+def pulse():
+    return 'pulse'
+
 if __name__ == "__main__":
     signal.signal(signal.SIGTERM, sys.exit)
     app.run(host='0.0.0.0', port=80)
