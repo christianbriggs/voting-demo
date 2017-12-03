@@ -1,10 +1,10 @@
-sut:
-  build:
-    context: .
-    dockerfile: Dockerfile-alternate
-  image: this
-  links:
-    - redis
-  command: ./run_test.sh
-redis:
-  image: redis
+version: '2'
+services:
+
+  sut:
+    build: .
+    depends_on:
+      - redis
+    command: ./run_test.sh
+  redis:
+    image: redis
